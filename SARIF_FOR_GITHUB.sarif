@@ -798,6 +798,12 @@
                             "name": "Control flow anomaly",
                             "fullDescription": {
                                 "text": "Control flow anomaly"
+                            },
+                            "messageStrings": {
+                                "ABCD": {
+                                    "text": "ABC  \n{2}  \n{3}",
+                                    "markdown": "MARKDOWN ABC  \n{0}  \n{1}"
+                                }
                             }
                         },
                         {
@@ -932,8 +938,7 @@
                             "ALARM (D) control_flow_anomaly: analyzed entry-point main never returns at helloWorld.c:2",
                             ""
                         ],
-                        "text": "Control flow anomaly  \n{2}  \n{3}",
-                        "markdown": "**Control flow anomaly**  \n{0}  \n{1}"
+                        "id": "ABCD"
                     },
                     "ruleId": "control_flow_anomaly",
                     "locations": [
