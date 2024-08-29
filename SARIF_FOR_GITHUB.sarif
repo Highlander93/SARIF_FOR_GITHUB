@@ -6,11 +6,6 @@
             "artifacts": [
                 {
                     "location": {
-                        "uri": "<Configuration.OriginalSourceAnnotations>"
-                    }
-                },
-                {
-                    "location": {
                         "uri": "[Configuration.Preprocessor]"
                     }
                 },
