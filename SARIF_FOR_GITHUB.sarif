@@ -938,7 +938,9 @@
                             "ALARM (D) control_flow_anomaly: analyzed entry-point main never returns at helloWorld.c:2",
                             ""
                         ],
-                        "id": "ABCD"
+                        "id": "ABCD",
+                        "text": "TEST-TEXT",
+                        "markdown": "TEST-MARKDOWN"
                     },
                     "ruleId": "control_flow_anomaly",
                     "locations": [
