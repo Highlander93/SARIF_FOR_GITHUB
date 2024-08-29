@@ -6,7 +6,7 @@
             "artifacts": [
                 {
                     "location": {
-                        "uri": "/local/ssd/mueller/Masterthesis/helloWorld.c"
+                        "uri": "SARIF_FOR_GITHUB/SARIF_FOR_GITHUB.c"
                     }
                 }
             ],
