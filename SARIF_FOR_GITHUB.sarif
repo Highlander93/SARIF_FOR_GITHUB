@@ -6,127 +6,7 @@
             "artifacts": [
                 {
                     "location": {
-                        "uri": "[Configuration.Preprocessor]"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/assert.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/astree_config.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/astree_restrict.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/src/clib.c"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/ctype.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/errno.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/fenv.h"
-                    }
-                },
-                {
-                    "location": {
                         "uri": "/local/ssd/mueller/Masterthesis/helloWorld.c"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/inttypes.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/limits.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/locale.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/math.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/setjmp.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/signal.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/stdarg.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/stdbool.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/stddef.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/stdint.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/stdio.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/stdlib.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/string.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/time.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/wchar.h"
-                    }
-                },
-                {
-                    "location": {
-                        "uri": "/makefactory/products/master/release/linux64/a3_c_15848784/share/clibrary/include/wctype.h"
                     }
                 }
             ],
@@ -942,7 +822,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 9
+                                                "index": 0
                                             },
                                             "region": {
                                                 "startLine": 2,
@@ -961,7 +841,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 9
+                                                "index": 0
                                             },
                                             "region": {
                                                 "startLine": 7,
@@ -997,7 +877,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "index": 9
+                                    "index": 0
                                 },
                                 "region": {
                                     "startLine": 7,
@@ -1021,7 +901,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 9
+                                                "index": 0
                                             },
                                             "region": {
                                                 "startLine": 2,
@@ -1060,7 +940,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "index": 9
+                                    "index": 0
                                 },
                                 "region": {
                                     "startLine": 2,
@@ -1084,7 +964,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 9
+                                                "index": 0
                                             },
                                             "region": {
                                                 "startLine": 2,
@@ -1103,7 +983,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 9
+                                                "index": 0
                                             },
                                             "region": {
                                                 "startLine": 7,
@@ -1138,7 +1018,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "index": 9
+                                    "index": 0
                                 },
                                 "region": {
                                     "startLine": 7,
