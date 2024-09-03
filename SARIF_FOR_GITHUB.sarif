@@ -6,71 +6,6 @@
             "artifacts": [
                 {
                     "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
-                        "uri": ""
-                    }
-                },
-                {
-                    "location": {
                         "uri": "SARIF_FOR_GITHUB.c"
                     }
                 }
@@ -117,7 +52,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 13
+                                                "index": 0
                                             },
                                             "region": {
                                                 "startLine": 2,
@@ -150,7 +85,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "index": 13
+                                    "index": 0
                                 },
                                 "region": {
                                     "startLine": 2,
@@ -174,7 +109,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 13
+                                                "index": 0
                                             },
                                             "region": {
                                                 "startLine": 2,
@@ -193,7 +128,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 13
+                                                "index": 0
                                             },
                                             "region": {
                                                 "startLine": 7,
@@ -223,7 +158,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "index": 13
+                                    "index": 0
                                 },
                                 "region": {
                                     "startLine": 7,
@@ -247,7 +182,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 13
+                                                "index": 0
                                             },
                                             "region": {
                                                 "startLine": 2,
@@ -266,7 +201,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 13
+                                                "index": 0
                                             },
                                             "region": {
                                                 "startLine": 7,
@@ -295,7 +230,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "index": 13
+                                    "index": 0
                                 },
                                 "region": {
                                     "startLine": 7,
