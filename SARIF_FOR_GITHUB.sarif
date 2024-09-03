@@ -63,7 +63,7 @@
                                             }
                                         },
                                         "message": {
-                                            "text": "ALARM (D) control_flow_anomaly: analyzed entry-point main never returns"
+                                            "text": "ALARM (D) control_flow_anomalyBLABLUB: analyzed entry-point main never returns"
                                         }
                                     }
                                 }
