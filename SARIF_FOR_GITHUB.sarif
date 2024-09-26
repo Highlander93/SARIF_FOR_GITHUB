@@ -6,21 +6,966 @@
             "artifacts": [
                 {
                     "location": {
-                        "uri": "SARIF_FOR_GITHUB.c"
+                        "uri": "<Configuration.OriginalSourceAnnotations>"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "[Configuration.Preprocessor]"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/assert.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/astree_config.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/astree_restrict.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/src/clib.c"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/ctype.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/errno.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/fenv.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/inttypes.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/limits.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/locale.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/math.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/local/ssd/mueller/tmp/SARIF_FOR_GITHUB/SARIF_FOR_GITHUB.c"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/setjmp.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/signal.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/stdarg.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/stdbool.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/stddef.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/stdint.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/stdio.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/stdlib.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/string.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/time.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/wchar.h"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "/makefactory/products/master/release/linux64/a3_c_15967530/share/clibrary/include/wctype.h"
                     }
                 }
             ],
             "tool": {
                 "driver": {
-                    "name": "AbsInt Advanced Analyzer for C/C++",
-                    "version": "Version 24.04i Build 15807885 bug/36271.3",
+                    "name": "astree",
+                    "version": "Version: 24.04i Build: 15807885 Tag: bug/36271.3",
+                    "product": "AbsInt Advanced Analyzer for C/C++",
                     "informationUri": "https://www.absint.com/",
                     "rules": [
+                        {
+                            "id": "A.1.1",
+                            "name": "Two declarations that declare the same entity must be of compatible type. (ISO/IEC 9899:1999 6.2.7p2)",
+                            "fullDescription": {
+                                "text": "Two declarations that declare the same entity must be of compatible type. (ISO/IEC 9899:1999 6.2.7p2)"
+                            },
+                            "messageStrings": {
+                                "type-compatibility": {
+                                    "text": "Rule A.1.1: Two declarations that declare the same entity must be of compatible type. (ISO/IEC 9899:1999 6.2.7p2) \ncheck type\\-compatibility failed: If objects or functions are declared more than once their types shall be compatible. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.1**: Two declarations that declare the same entity must be of compatible type\\. \\(ISO/IEC 9899:1999 6\\.2\\.7p2\\) \ncheck **type-compatibility** failed: If objects or functions are declared more than once their types shall be compatible\\. \n{0} \n{1}"
+                                },
+                                "type-compatibility-link": {
+                                    "text": "Rule A.1.1: Two declarations that declare the same entity must be of compatible type. (ISO/IEC 9899:1999 6.2.7p2) \ncheck type\\-compatibility\\-link failed: If objects or functions are declared more than once their types shall be compatible. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.1**: Two declarations that declare the same entity must be of compatible type\\. \\(ISO/IEC 9899:1999 6\\.2\\.7p2\\) \ncheck **type-compatibility-link** failed: If objects or functions are declared more than once their types shall be compatible\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.2",
+                            "name": "If the size expression of an array declarator is constant, it shall have a value greater than zero. (ISO/IEC 9899:1999 6.7.5.2p1)",
+                            "fullDescription": {
+                                "text": "If the size expression of an array declarator is constant, it shall have a value greater than zero. (ISO/IEC 9899:1999 6.7.5.2p1)"
+                            },
+                            "messageStrings": {
+                                "invalid-array-size": {
+                                    "text": "Rule A.1.2: If the size expression of an array declarator is constant, it shall have a value greater than zero. (ISO/IEC 9899:1999 6.7.5.2p1) \ncheck invalid\\-array\\-size failed: If the size expression of an array declarator is constant, it shall have a value greater than zero. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.2**: If the size expression of an array declarator is constant, it shall have a value greater than zero\\. \\(ISO/IEC 9899:1999 6\\.7\\.5\\.2p1\\) \ncheck **invalid-array-size** failed: If the size expression of an array declarator is constant, it shall have a value greater than zero\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.3",
+                            "name": "At least one type specifier shall be given in a declaration. (ISO/IEC 9899:1999 6.7.2p2)",
+                            "fullDescription": {
+                                "text": "At least one type specifier shall be given in a declaration. (ISO/IEC 9899:1999 6.7.2p2)"
+                            },
+                            "properties": {
+                                "option": "no"
+                            },
+                            "messageStrings": {
+                                "function-return-type": {
+                                    "text": "Rule A.1.3: At least one type specifier shall be given in a declaration. (ISO/IEC 9899:1999 6.7.2p2) \ncheck function\\-return\\-type failed: A function definition shall comprise the return type. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.3**: At least one type specifier shall be given in a declaration\\. \\(ISO/IEC 9899:1999 6\\.7\\.2p2\\) \ncheck **function-return-type** failed: A function definition shall comprise the return type\\. \n{0} \n{1}"
+                                },
+                                "type-specifier": {
+                                    "text": "Rule A.1.3: At least one type specifier shall be given in a declaration. (ISO/IEC 9899:1999 6.7.2p2) \ncheck type\\-specifier failed: Every variable declaration statement shall comprise the data type. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.3**: At least one type specifier shall be given in a declaration\\. \\(ISO/IEC 9899:1999 6\\.7\\.2p2\\) \ncheck **type-specifier** failed: Every variable declaration statement shall comprise the data type\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.4",
+                            "name": "No implicit conversion shall be performed between pointer types and integer types. (ISO/IEC 9899:1999 6.5.4p3)",
+                            "fullDescription": {
+                                "text": "No implicit conversion shall be performed between pointer types and integer types. (ISO/IEC 9899:1999 6.5.4p3)"
+                            },
+                            "messageStrings": {
+                                "function-pointer-integer-cast-implicit": {
+                                    "text": "Rule A.1.4: No implicit conversion shall be performed between pointer types and integer types. (ISO/IEC 9899:1999 6.5.4p3) \ncheck function\\-pointer\\-integer\\-cast\\-implicit failed: Conversions shall not be performed between a pointer to a function and an integer type. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.4**: No implicit conversion shall be performed between pointer types and integer types\\. \\(ISO/IEC 9899:1999 6\\.5\\.4p3\\) \ncheck **function-pointer-integer-cast-implicit** failed: Conversions shall not be performed between a pointer to a function and an integer type\\. \n{0} \n{1}"
+                                },
+                                "pointer-integral-cast-implicit": {
+                                    "text": "Rule A.1.4: No implicit conversion shall be performed between pointer types and integer types. (ISO/IEC 9899:1999 6.5.4p3) \ncheck pointer\\-integral\\-cast\\-implicit failed: An Implicit cast shall not be performed between a pointer to object type and an integral type. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.4**: No implicit conversion shall be performed between pointer types and integer types\\. \\(ISO/IEC 9899:1999 6\\.5\\.4p3\\) \ncheck **pointer-integral-cast-implicit** failed: An Implicit cast shall not be performed between a pointer to object type and an integral type\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.5",
+                            "name": "The number of arguments shall agree with the number of parameters. (ISO/IEC 9899:1999 6.5.2.2p2)",
+                            "fullDescription": {
+                                "text": "The number of arguments shall agree with the number of parameters. (ISO/IEC 9899:1999 6.5.2.2p2)"
+                            },
+                            "messageStrings": {
+                                "parameter-match-type": {
+                                    "text": "Rule A.1.5: The number of arguments shall agree with the number of parameters. (ISO/IEC 9899:1999 6.5.2.2p2) \ncheck parameter\\-match\\-type failed: The number of arguments at a function call shall match the number of parameters according to the type of the function designator. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.5**: The number of arguments shall agree with the number of parameters\\. \\(ISO/IEC 9899:1999 6\\.5\\.2\\.2p2\\) \ncheck **parameter-match-type** failed: The number of arguments at a function call shall match the number of parameters according to the type of the function designator\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.6",
+                            "name": "The constant expression of a static assert shall compare unequal to zero. (ISO/IEC 9899:2011 6.7.10p2)",
+                            "fullDescription": {
+                                "text": "The constant expression of a static assert shall compare unequal to zero. (ISO/IEC 9899:2011 6.7.10p2)"
+                            },
+                            "messageStrings": {
+                                "non-constant-static-assert": {
+                                    "text": "Rule A.1.6: The constant expression of a static assert shall compare unequal to zero. (ISO/IEC 9899:2011 6.7.10p2) \ncheck non\\-constant\\-static\\-assert failed: The condition of _Static_assert shall be a constant expression. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.6**: The constant expression of a static assert shall compare unequal to zero\\. \\(ISO/IEC 9899:2011 6\\.7\\.10p2\\) \ncheck **non-constant-static-assert** failed: The condition of \\_Static\\_assert shall be a constant expression\\. \n{0} \n{1}"
+                                },
+                                "static-assert": {
+                                    "text": "Rule A.1.6: The constant expression of a static assert shall compare unequal to zero. (ISO/IEC 9899:2011 6.7.10p2) \ncheck static\\-assert failed: The constant expression of a static assert (_Static_assert) shall compare unequal to zero. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.6**: The constant expression of a static assert shall compare unequal to zero\\. \\(ISO/IEC 9899:2011 6\\.7\\.10p2\\) \ncheck **static-assert** failed: The constant expression of a static assert \\(\\_Static\\_assert\\) shall compare unequal to zero\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.7",
+                            "name": "The lvalue of a unary or binary assignment operator shall be a modifiable lvalue. (ISO/IEC 9899:1999 6.5.16p2)",
+                            "fullDescription": {
+                                "text": "The lvalue of a unary or binary assignment operator shall be a modifiable lvalue. (ISO/IEC 9899:1999 6.5.16p2)"
+                            },
+                            "messageStrings": {
+                                "assignment-to-non-modifiable-lvalue": {
+                                    "text": "Rule A.1.7: The lvalue of a unary or binary assignment operator shall be a modifiable lvalue. (ISO/IEC 9899:1999 6.5.16p2) \ncheck assignment\\-to\\-non\\-modifiable\\-lvalue failed: The lvalue to which an assignment is applied to shall be a modifiable lvalue. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.7**: The lvalue of a unary or binary assignment operator shall be a modifiable lvalue\\. \\(ISO/IEC 9899:1999 6\\.5\\.16p2\\) \ncheck **assignment-to-non-modifiable-lvalue** failed: The lvalue to which an assignment is applied to shall be a modifiable lvalue\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.8",
+                            "name": "No initializer shall attempt to provide a value for an object not contained within the entity being initialized. (ISO/IEC 9899:1999 6.7.8p2)",
+                            "fullDescription": {
+                                "text": "No initializer shall attempt to provide a value for an object not contained within the entity being initialized. (ISO/IEC 9899:1999 6.7.8p2)"
+                            },
+                            "messageStrings": {
+                                "initializer-excess": {
+                                    "text": "Rule A.1.8: No initializer shall attempt to provide a value for an object not contained within the entity being initialized. (ISO/IEC 9899:1999 6.7.8p2) \ncheck initializer\\-excess failed: An array initializer shall not exceed the size of the object initialized. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.8**: No initializer shall attempt to provide a value for an object not contained within the entity being initialized\\. \\(ISO/IEC 9899:1999 6\\.7\\.8p2\\) \ncheck **initializer-excess** failed: An array initializer shall not exceed the size of the object initialized\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.9",
+                            "name": "If an identifier has no linkage, there shall be no more than one declaration of the identifier with the same scope and in the same name space, except for tags. (ISO/IEC 9899:1999 6.7p3)",
+                            "fullDescription": {
+                                "text": "If an identifier has no linkage, there shall be no more than one declaration of the identifier with the same scope and in the same name space, except for tags. (ISO/IEC 9899:1999 6.7p3)"
+                            },
+                            "messageStrings": {
+                                "redeclaration": {
+                                    "text": "Rule A.1.9: If an identifier has no linkage, there shall be no more than one declaration of the identifier with the same scope and in the same name space, except for tags. (ISO/IEC 9899:1999 6.7p3) \ncheck redeclaration failed: Entities with no linkage shall not be redeclared in the same scope. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.9**: If an identifier has no linkage, there shall be no more than one declaration of the identifier with the same scope and in the same name space, except for tags\\. \\(ISO/IEC 9899:1999 6\\.7p3\\) \ncheck **redeclaration** failed: Entities with no linkage shall not be redeclared in the same scope\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.10",
+                            "name": "Every parameter identifier in a function definition with identifier-list shall be declared. (ISO/IEC 9899:1999 6.9.1p6)",
+                            "fullDescription": {
+                                "text": "Every parameter identifier in a function definition with identifier-list shall be declared. (ISO/IEC 9899:1999 6.9.1p6)"
+                            },
+                            "properties": {
+                                "option": "no"
+                            },
+                            "messageStrings": {
+                                "undeclared-parameter": {
+                                    "text": "Rule A.1.10: Every parameter identifier in a function definition with identifier-list shall be declared. (ISO/IEC 9899:1999 6.9.1p6) \ncheck undeclared\\-parameter failed: Every parameter identifier in a function definition with identifier-list shall be declared. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.10**: Every parameter identifier in a function definition with identifier\\-list shall be declared\\. \\(ISO/IEC 9899:1999 6\\.9\\.1p6\\) \ncheck **undeclared-parameter** failed: Every parameter identifier in a function definition with identifier\\-list shall be declared\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.11",
+                            "name": "A pointer type shall not be implicitly converted into an incompatible pointer type. (ISO/IEC 9899:1999 6.5.16.1p1)",
+                            "fullDescription": {
+                                "text": "A pointer type shall not be implicitly converted into an incompatible pointer type. (ISO/IEC 9899:1999 6.5.16.1p1)"
+                            },
+                            "messageStrings": {
+                                "incompatible-function-pointer-conversion": {
+                                    "text": "Rule A.1.11: A pointer type shall not be implicitly converted into an incompatible pointer type. (ISO/IEC 9899:1999 6.5.16.1p1) \ncheck incompatible\\-function\\-pointer\\-conversion failed: A (function) pointer type shall not be implicitly converted into an incompatible (function) pointer type. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.11**: A pointer type shall not be implicitly converted into an incompatible pointer type\\. \\(ISO/IEC 9899:1999 6\\.5\\.16\\.1p1\\) \ncheck **incompatible-function-pointer-conversion** failed: A \\(function\\) pointer type shall not be implicitly converted into an incompatible \\(function\\) pointer type\\. \n{0} \n{1}"
+                                },
+                                "incompatible-object-pointer-conversion": {
+                                    "text": "Rule A.1.11: A pointer type shall not be implicitly converted into an incompatible pointer type. (ISO/IEC 9899:1999 6.5.16.1p1) \ncheck incompatible\\-object\\-pointer\\-conversion failed: An object pointer type shall not be implicitly converted into an incompatible object pointer type. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.11**: A pointer type shall not be implicitly converted into an incompatible pointer type\\. \\(ISO/IEC 9899:1999 6\\.5\\.16\\.1p1\\) \ncheck **incompatible-object-pointer-conversion** failed: An object pointer type shall not be implicitly converted into an incompatible object pointer type\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.12",
+                            "name": "A return statement shall only define a return value if and only if the containing function has non-void return type. (ISO/IEC 9899:2011 6.8.6.4p1)",
+                            "fullDescription": {
+                                "text": "A return statement shall only define a return value if and only if the containing function has non-void return type. (ISO/IEC 9899:2011 6.8.6.4p1)"
+                            },
+                            "messageStrings": {
+                                "return-empty": {
+                                    "text": "Rule A.1.12: A return statement shall only define a return value if and only if the containing function has non-void return type. (ISO/IEC 9899:2011 6.8.6.4p1) \ncheck return\\-empty failed: In functions with non-void return type, a return statement shall define a return value. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.12**: A return statement shall only define a return value if and only if the containing function has non\\-void return type\\. \\(ISO/IEC 9899:2011 6\\.8\\.6\\.4p1\\) \ncheck **return-empty** failed: In functions with non\\-void return type, a return statement shall define a return value\\. \n{0} \n{1}"
+                                },
+                                "return-non-empty": {
+                                    "text": "Rule A.1.12: A return statement shall only define a return value if and only if the containing function has non-void return type. (ISO/IEC 9899:2011 6.8.6.4p1) \ncheck return\\-non\\-empty failed: In functions with void return type, a return statement shall not define a return value. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.12**: A return statement shall only define a return value if and only if the containing function has non\\-void return type\\. \\(ISO/IEC 9899:2011 6\\.8\\.6\\.4p1\\) \ncheck **return-non-empty** failed: In functions with void return type, a return statement shall not define a return value\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.13",
+                            "name": "The alignment specifier _Alignas shall only be used as specified by the C standard. (ISO/IEC 9899:2011 6.7.5)",
+                            "fullDescription": {
+                                "text": "The alignment specifier _Alignas shall only be used as specified by the C standard. (ISO/IEC 9899:2011 6.7.5)"
+                            },
+                            "messageStrings": {
+                                "alignas-extended": {
+                                    "text": "Rule A.1.13: The alignment specifier _Alignas shall only be used as specified by the C standard. (ISO/IEC 9899:2011 6.7.5) \ncheck alignas\\-extended failed: The alignment specifier _Alignas shall only be used as specified by the C standard. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.13**: The alignment specifier \\_Alignas shall only be used as specified by the C standard\\. \\(ISO/IEC 9899:2011 6\\.7\\.5\\) \ncheck **alignas-extended** failed: The alignment specifier \\_Alignas shall only be used as specified by the C standard\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.14",
+                            "name": "The declaration of each parameter in a function definition shall include an identifier. (ISO/IEC 9899:2011 6.9.1p5)",
+                            "fullDescription": {
+                                "text": "The declaration of each parameter in a function definition shall include an identifier. (ISO/IEC 9899:2011 6.9.1p5)"
+                            },
+                            "messageStrings": {
+                                "unnamed-parameter": {
+                                    "text": "Rule A.1.14: The declaration of each parameter in a function definition shall include an identifier. (ISO/IEC 9899:2011 6.9.1p5) \ncheck unnamed\\-parameter failed: There shall be no unnamed parameters in function definitions. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.14**: The declaration of each parameter in a function definition shall include an identifier\\. \\(ISO/IEC 9899:2011 6\\.9\\.1p5\\) \ncheck **unnamed-parameter** failed: There shall be no unnamed parameters in function definitions\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.15",
+                            "name": "The element type of an array shall not be an incomplete type. (ISO/IEC 9899:2011 6.7.6.2p1)",
+                            "fullDescription": {
+                                "text": "The element type of an array shall not be an incomplete type. (ISO/IEC 9899:2011 6.7.6.2p1)"
+                            },
+                            "messageStrings": {
+                                "element-type-incomplete": {
+                                    "text": "Rule A.1.15: The element type of an array shall not be an incomplete type. (ISO/IEC 9899:2011 6.7.6.2p1) \ncheck element\\-type\\-incomplete failed: The element type of an array shall be complete whenever the array type is specified. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.15**: The element type of an array shall not be an incomplete type\\. \\(ISO/IEC 9899:2011 6\\.7\\.6\\.2p1\\) \ncheck **element-type-incomplete** failed: The element type of an array shall be complete whenever the array type is specified\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.1.16",
+                            "name": "A struct-declaration that does not declare an anonymous structure or anonymous union shall contain a struct-declarator-list. (ISO/IEC 9899:2011 6.7.2.1p2)",
+                            "fullDescription": {
+                                "text": "A struct-declaration that does not declare an anonymous structure or anonymous union shall contain a struct-declarator-list. (ISO/IEC 9899:2011 6.7.2.1p2)"
+                            },
+                            "messageStrings": {
+                                "no-declarator-in-struct": {
+                                    "text": "Rule A.1.16: A struct-declaration that does not declare an anonymous structure or anonymous union shall contain a struct-declarator-list. (ISO/IEC 9899:2011 6.7.2.1p2) \ncheck no\\-declarator\\-in\\-struct failed: A struct member declaration that does not declare an anonymous structure or anonymous union shall declare at least one member. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.1\\.16**: A struct\\-declaration that does not declare an anonymous structure or anonymous union shall contain a struct\\-declarator\\-list\\. \\(ISO/IEC 9899:2011 6\\.7\\.2\\.1p2\\) \ncheck **no-declarator-in-struct** failed: A struct member declaration that does not declare an anonymous structure or anonymous union shall declare at least one member\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.1",
+                            "name": "Implicit function declaration shall not be used. (ISO/IEC 9899:1999 6.5.1p2)",
+                            "fullDescription": {
+                                "text": "Implicit function declaration shall not be used. (ISO/IEC 9899:1999 6.5.1p2)"
+                            },
+                            "messageStrings": {
+                                "implicit-function-declaration": {
+                                    "text": "Rule A.2.1: Implicit function declaration shall not be used. (ISO/IEC 9899:1999 6.5.1p2) \ncheck implicit\\-function\\-declaration failed: Functions shall not be declared implicitly. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.1**: Implicit function declaration shall not be used\\. \\(ISO/IEC 9899:1999 6\\.5\\.1p2\\) \ncheck **implicit-function-declaration** failed: Functions shall not be declared implicitly\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.2",
+                            "name": "Assembler code shall be avoided. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "Assembler code shall be avoided. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "assembler": {
+                                    "text": "Rule A.2.2: Assembler code shall be avoided. (ISO/IEC 9899:1999 4p5) \ncheck assembler failed: Assembler code shall be avoided. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.2**: Assembler code shall be avoided\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **assembler** failed: Assembler code shall be avoided\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.3",
+                            "name": "Data placement at an absolute location shall be avoided. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "Data placement at an absolute location shall be avoided. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "at-location": {
+                                    "text": "Rule A.2.3: Data placement at an absolute location shall be avoided. (ISO/IEC 9899:1999 4p5) \ncheck at\\-location failed: Data placement at an absolute address using @ notation shall be avoided. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.3**: Data placement at an absolute location shall be avoided\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **at-location** failed: Data placement at an absolute address using @ notation shall be avoided\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.4",
+                            "name": "Only integer constant expressions stricly conforming to the C standard shall be used. (ISO/IEC 9899:1999 6.6p10)",
+                            "fullDescription": {
+                                "text": "Only integer constant expressions stricly conforming to the C standard shall be used. (ISO/IEC 9899:1999 6.6p10)"
+                            },
+                            "messageStrings": {
+                                "constant-expression-extended": {
+                                    "text": "Rule A.2.4: Only integer constant expressions stricly conforming to the C standard shall be used. (ISO/IEC 9899:1999 6.6p10) \ncheck constant\\-expression\\-extended failed: Only strictly conforming constant expressions shall be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.4**: Only integer constant expressions stricly conforming to the C standard shall be used\\. \\(ISO/IEC 9899:1999 6\\.6p10\\) \ncheck **constant-expression-extended** failed: Only strictly conforming constant expressions shall be used\\. \n{0} \n{1}"
+                                },
+                                "constant-expression-extended-pp": {
+                                    "text": "Rule A.2.4: Only integer constant expressions stricly conforming to the C standard shall be used. (ISO/IEC 9899:1999 6.6p10) \ncheck constant\\-expression\\-extended\\-pp failed: Only strictly conforming constant expressions shall be used in preprocessor directives. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.4**: Only integer constant expressions stricly conforming to the C standard shall be used\\. \\(ISO/IEC 9899:1999 6\\.6p10\\) \ncheck **constant-expression-extended-pp** failed: Only strictly conforming constant expressions shall be used in preprocessor directives\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.5",
+                            "name": "Enums shall not be forward-declared, i.e. used as complete type before being defined. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "Enums shall not be forward-declared, i.e. used as complete type before being defined. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "forward-declared-enum": {
+                                    "text": "Rule A.2.5: Enums shall not be forward-declared, i.e. used as complete type before being defined. (ISO/IEC 9899:1999 4p5) \ncheck forward\\-declared\\-enum failed: Enums shall not be forward-declared. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.5**: Enums shall not be forward\\-declared, i\\.e\\. used as complete type before being defined\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **forward-declared-enum** failed: Enums shall not be forward\\-declared\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.6",
+                            "name": "Lvalue casts shall be avoided. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "Lvalue casts shall be avoided. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "lvalue-cast": {
+                                    "text": "Rule A.2.6: Lvalue casts shall be avoided. (ISO/IEC 9899:1999 4p5) \ncheck lvalue\\-cast failed: Lvalue casts shall be avoided. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.6**: Lvalue casts shall be avoided\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **lvalue-cast** failed: Lvalue casts shall be avoided\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.7",
+                            "name": "Non-standard keywords shall not be used. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "Non-standard keywords shall not be used. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "non-standard-keyword": {
+                                    "text": "Rule A.2.7: Non-standard keywords shall not be used. (ISO/IEC 9899:1999 4p5) \ncheck non\\-standard\\-keyword failed: Non-standard keywords shall not be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.7**: Non\\-standard keywords shall not be used\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **non-standard-keyword** failed: Non\\-standard keywords shall not be used\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.8",
+                            "name": "Pointer attributes shall be avoided. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "Pointer attributes shall be avoided. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "pointer-attribute": {
+                                    "text": "Rule A.2.8: Pointer attributes shall be avoided. (ISO/IEC 9899:1999 4p5) \ncheck pointer\\-attribute failed: Pointer attributes shall be avoided. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.8**: Pointer attributes shall be avoided\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **pointer-attribute** failed: Pointer attributes shall be avoided\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.9",
+                            "name": "GCC's statement expressions shall not be used. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "GCC's statement expressions shall not be used. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "statement-expression": {
+                                    "text": "Rule A.2.9: GCC's statement expressions shall not be used. (ISO/IEC 9899:1999 4p5) \ncheck statement\\-expression failed: GCC's statement expressions shall be avoided. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.9**: GCC's statement expressions shall not be used\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **statement-expression** failed: GCC's statement expressions shall be avoided\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.10",
+                            "name": "GCC's binary constants shall not be used. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "GCC's binary constants shall not be used. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "binary-constant": {
+                                    "text": "Rule A.2.10: GCC's binary constants shall not be used. (ISO/IEC 9899:1999 4p5) \ncheck binary\\-constant failed: GCC's binary constants shall be avoided. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.10**: GCC's binary constants shall not be used\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **binary-constant** failed: GCC's binary constants shall be avoided\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.11",
+                            "name": "Non-standard escape sequences shall not be used. (ISO/IEC 9899:1999 6.4.4.4)",
+                            "fullDescription": {
+                                "text": "Non-standard escape sequences shall not be used. (ISO/IEC 9899:1999 6.4.4.4)"
+                            },
+                            "messageStrings": {
+                                "non-standard-escape-sequence": {
+                                    "text": "Rule A.2.11: Non-standard escape sequences shall not be used. (ISO/IEC 9899:1999 6.4.4.4) \ncheck non\\-standard\\-escape\\-sequence failed: Non-standard escape sequences shall not be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.11**: Non\\-standard escape sequences shall not be used\\. \\(ISO/IEC 9899:1999 6\\.4\\.4\\.4\\) \ncheck **non-standard-escape-sequence** failed: Non\\-standard escape sequences shall not be used\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.12",
+                            "name": "Identifiers containing characters not provided for by the C standard shall not be used. (ISO/IEC 9899:1999 6.4.2.1)",
+                            "fullDescription": {
+                                "text": "Identifiers containing characters not provided for by the C standard shall not be used. (ISO/IEC 9899:1999 6.4.2.1)"
+                            },
+                            "messageStrings": {
+                                "non-standard-identifier": {
+                                    "text": "Rule A.2.12: Identifiers containing characters not provided for by the C standard shall not be used. (ISO/IEC 9899:1999 6.4.2.1) \ncheck non\\-standard\\-identifier failed: Identifiers containing characters not provided for by the C standard shall not be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.12**: Identifiers containing characters not provided for by the C standard shall not be used\\. \\(ISO/IEC 9899:1999 6\\.4\\.2\\.1\\) \ncheck **non-standard-identifier** failed: Identifiers containing characters not provided for by the C standard shall not be used\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.13",
+                            "name": "The sizeof and _Alignof operator shall not be applied to type void. (ISO/IEC 9899:2011 6.5.3.4p1)",
+                            "fullDescription": {
+                                "text": "The sizeof and _Alignof operator shall not be applied to type void. (ISO/IEC 9899:2011 6.5.3.4p1)"
+                            },
+                            "messageStrings": {
+                                "alignof-void": {
+                                    "text": "Rule A.2.13: The sizeof and _Alignof operator shall not be applied to type void. (ISO/IEC 9899:2011 6.5.3.4p1) \ncheck alignof\\-void failed: The _Alignof operator shall not be applied to type void. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.13**: The sizeof and \\_Alignof operator shall not be applied to type void\\. \\(ISO/IEC 9899:2011 6\\.5\\.3\\.4p1\\) \ncheck **alignof-void** failed: The \\_Alignof operator shall not be applied to type void\\. \n{0} \n{1}"
+                                },
+                                "sizeof-void": {
+                                    "text": "Rule A.2.13: The sizeof and _Alignof operator shall not be applied to type void. (ISO/IEC 9899:2011 6.5.3.4p1) \ncheck sizeof\\-void failed: The sizeof operator shall not be applied to type void. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.13**: The sizeof and \\_Alignof operator shall not be applied to type void\\. \\(ISO/IEC 9899:2011 6\\.5\\.3\\.4p1\\) \ncheck **sizeof-void** failed: The sizeof operator shall not be applied to type void\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.14",
+                            "name": "GCC's #include_next directive shall not be used. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "GCC's #include_next directive shall not be used. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "include-next": {
+                                    "text": "Rule A.2.14: GCC's #include_next directive shall not be used. (ISO/IEC 9899:1999 4p5) \ncheck include\\-next failed: #include_next directives shall be avoided. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.14**: GCC's #include\\_next directive shall not be used\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **include-next** failed: #include\\_next directives shall be avoided\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.15",
+                            "name": "The include file checking macros __has_include and __has_include_next shall not be used. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "The include file checking macros __has_include and __has_include_next shall not be used. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "has-include": {
+                                    "text": "Rule A.2.15: The include file checking macros __has_include and __has_include_next shall not be used. (ISO/IEC 9899:1999 4p5) \ncheck has\\-include failed: The include file checking macro __has_include shall not be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.15**: The include file checking macros \\_\\_has\\_include and \\_\\_has\\_include\\_next shall not be used\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **has-include** failed: The include file checking macro \\_\\_has\\_include shall not be used\\. \n{0} \n{1}"
+                                },
+                                "has-include-next": {
+                                    "text": "Rule A.2.15: The include file checking macros __has_include and __has_include_next shall not be used. (ISO/IEC 9899:1999 4p5) \ncheck has\\-include\\-next failed: The include file checking macro __has_include_next shall not be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.15**: The include file checking macros \\_\\_has\\_include and \\_\\_has\\_include\\_next shall not be used\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **has-include-next** failed: The include file checking macro \\_\\_has\\_include\\_next shall not be used\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.16",
+                            "name": "__attribute__((...)) and __attribute((...)) shall not be used. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "__attribute__((...)) and __attribute((...)) shall not be used. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "attribute": {
+                                    "text": "Rule A.2.16: __attribute__((...)) and __attribute((...)) shall not be used. (ISO/IEC 9899:1999 4p5) \ncheck attribute failed: __attribute__((...)) and __attribute((...)) shall not be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.16**: \\_\\_attribute\\_\\_\\(\\(\\.\\.\\.\\)\\) and \\_\\_attribute\\(\\(\\.\\.\\.\\)\\) shall not be used\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **attribute** failed: \\_\\_attribute\\_\\_\\(\\(\\.\\.\\.\\)\\) and \\_\\_attribute\\(\\(\\.\\.\\.\\)\\) shall not be used\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.17",
+                            "name": "A struct type shall have at least one member. (ISO/IEC 9899:1999 6.7.2.1)",
+                            "fullDescription": {
+                                "text": "A struct type shall have at least one member. (ISO/IEC 9899:1999 6.7.2.1)"
+                            },
+                            "messageStrings": {
+                                "empty-struct": {
+                                    "text": "Rule A.2.17: A struct type shall have at least one member. (ISO/IEC 9899:1999 6.7.2.1) \ncheck empty\\-struct failed: A struct type shall have at least one member. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.17**: A struct type shall have at least one member\\. \\(ISO/IEC 9899:1999 6\\.7\\.2\\.1\\) \ncheck **empty-struct** failed: A struct type shall have at least one member\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.18",
+                            "name": "Pointer arithmetic shall not be applied to pointer to incomplete type. (ISO/IEC 9899:2011 6.5.6p2+3)",
+                            "fullDescription": {
+                                "text": "Pointer arithmetic shall not be applied to pointer to incomplete type. (ISO/IEC 9899:2011 6.5.6p2+3)"
+                            },
+                            "messageStrings": {
+                                "pointer-arithmetic-void": {
+                                    "text": "Rule A.2.18: Pointer arithmetic shall not be applied to pointer to incomplete type. (ISO/IEC 9899:2011 6.5.6p2+3) \ncheck pointer\\-arithmetic\\-void failed: Poitner arithmetic shall not be used with pointers to void. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.18**: Pointer arithmetic shall not be applied to pointer to incomplete type\\. \\(ISO/IEC 9899:2011 6\\.5\\.6p2\\+3\\) \ncheck **pointer-arithmetic-void** failed: Poitner arithmetic shall not be used with pointers to void\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.19",
+                            "name": "Enumerators shall have a value representable as an int. (ISO/IEC 9899:2011 6.7.2.2p2+3)",
+                            "fullDescription": {
+                                "text": "Enumerators shall have a value representable as an int. (ISO/IEC 9899:2011 6.7.2.2p2+3)"
+                            },
+                            "messageStrings": {
+                                "enumerator-value": {
+                                    "text": "Rule A.2.19: Enumerators shall have a value representable as an int. (ISO/IEC 9899:2011 6.7.2.2p2+3) \ncheck enumerator\\-value failed: The value of an enumerator shall be representable as a signed int. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.19**: Enumerators shall have a value representable as an int\\. \\(ISO/IEC 9899:2011 6\\.7\\.2\\.2p2\\+3\\) \ncheck **enumerator-value** failed: The value of an enumerator shall be representable as a signed int\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.20",
+                            "name": "Compiler-specific builtin functions shall not be used. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "Compiler-specific builtin functions shall not be used. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "builtin-function": {
+                                    "text": "Rule A.2.20: Compiler-specific builtin functions shall not be used. (ISO/IEC 9899:1999 4p5) \ncheck builtin\\-function failed: Compiler-specific builtin functions shall not be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.20**: Compiler\\-specific builtin functions shall not be used\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **builtin-function** failed: Compiler\\-specific builtin functions shall not be used\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.21",
+                            "name": "The compiler-specific __packed__ type specifier shall not be used. (ISO/IEC 9899:1999 4p5)",
+                            "fullDescription": {
+                                "text": "The compiler-specific __packed__ type specifier shall not be used. (ISO/IEC 9899:1999 4p5)"
+                            },
+                            "messageStrings": {
+                                "packed-specifier": {
+                                    "text": "Rule A.2.21: The compiler-specific __packed__ type specifier shall not be used. (ISO/IEC 9899:1999 4p5) \ncheck packed\\-specifier failed: The compiler-specific type specifier __packed__ shall not be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.21**: The compiler\\-specific \\_\\_packed\\_\\_ type specifier shall not be used\\. \\(ISO/IEC 9899:1999 4p5\\) \ncheck **packed-specifier** failed: The compiler\\-specific type specifier \\_\\_packed\\_\\_ shall not be used\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.22",
+                            "name": "The signed or unsigned integer type long long shall not be used with language version C90.",
+                            "fullDescription": {
+                                "text": "The signed or unsigned integer type long long shall not be used with language version C90."
+                            },
+                            "messageStrings": {
+                                "long-long-c90": {
+                                    "text": "Rule A.2.22: The signed or unsigned integer type long long shall not be used with language version C90. \ncheck long\\-long\\-c90 failed: The type (unsigned) long long shall not be used in C90. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.22**: The signed or unsigned integer type long long shall not be used with language version C90\\. \ncheck **long-long-c90** failed: The type \\(unsigned\\) long long shall not be used in C90\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.2.23",
+                            "name": "A braced initializer list shall not be empty. (ISO/IEC 9899:1999 6.7.9).",
+                            "fullDescription": {
+                                "text": "A braced initializer list shall not be empty. (ISO/IEC 9899:1999 6.7.9)."
+                            },
+                            "messageStrings": {
+                                "empty-initializer-list": {
+                                    "text": "Rule A.2.23: A braced initializer list shall not be empty. (ISO/IEC 9899:1999 6.7.9). \ncheck empty\\-initializer\\-list failed: A braced initializer list shall not be empty. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.2\\.23**: A braced initializer list shall not be empty\\. \\(ISO/IEC 9899:1999 6\\.7\\.9\\)\\. \ncheck **empty-initializer-list** failed: A braced initializer list shall not be empty\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.3.1",
+                            "name": "No cast shall be performed between pointer types and integer types. (ISO/IEC 9899:1999 6.3.2.3p5+6)",
+                            "fullDescription": {
+                                "text": "No cast shall be performed between pointer types and integer types. (ISO/IEC 9899:1999 6.3.2.3p5+6)"
+                            },
+                            "messageStrings": {
+                                "function-pointer-integer-cast": {
+                                    "text": "Rule A.3.1: No cast shall be performed between pointer types and integer types. (ISO/IEC 9899:1999 6.3.2.3p5+6) \ncheck function\\-pointer\\-integer\\-cast failed: Conversions shall not be performed between a pointer to a function and an integer type. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.3\\.1**: No cast shall be performed between pointer types and integer types\\. \\(ISO/IEC 9899:1999 6\\.3\\.2\\.3p5\\+6\\) \ncheck **function-pointer-integer-cast** failed: Conversions shall not be performed between a pointer to a function and an integer type\\. \n{0} \n{1}"
+                                },
+                                "pointer-integral-cast": {
+                                    "text": "Rule A.3.1: No cast shall be performed between pointer types and integer types. (ISO/IEC 9899:1999 6.3.2.3p5+6) \ncheck pointer\\-integral\\-cast failed: A cast shall not be performed between a pointer to object type and an integral type. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.3\\.1**: No cast shall be performed between pointer types and integer types\\. \\(ISO/IEC 9899:1999 6\\.3\\.2\\.3p5\\+6\\) \ncheck **pointer-integral-cast** failed: A cast shall not be performed between a pointer to object type and an integral type\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.3.2",
+                            "name": "The value of an integer character constant containing more than one character is implementation-defined. (ISO/IEC 9899:1999 6.4.4.4p10)",
+                            "fullDescription": {
+                                "text": "The value of an integer character constant containing more than one character is implementation-defined. (ISO/IEC 9899:1999 6.4.4.4p10)"
+                            },
+                            "messageStrings": {
+                                "multi-character-constant": {
+                                    "text": "Rule A.3.2: The value of an integer character constant containing more than one character is implementation-defined. (ISO/IEC 9899:1999 6.4.4.4p10) \ncheck multi\\-character\\-constant failed: Character constant containing more than one c-char. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.3\\.2**: The value of an integer character constant containing more than one character is implementation\\-defined\\. \\(ISO/IEC 9899:1999 6\\.4\\.4\\.4p10\\) \ncheck **multi-character-constant** failed: Character constant containing more than one c\\-char\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.3.3",
+                            "name": "A bit-field shall have a type _Bool, signed int, unsigned int, or some other implementation-defined type. (ISO/IEC 9899:1999 6.7.2.1)",
+                            "fullDescription": {
+                                "text": "A bit-field shall have a type _Bool, signed int, unsigned int, or some other implementation-defined type. (ISO/IEC 9899:1999 6.7.2.1)"
+                            },
+                            "properties": {
+                                "option": "int"
+                            },
+                            "messageStrings": {
+                                "bitfield-typing": {
+                                    "text": "Rule A.3.3: A bit-field shall have a type _Bool, signed int, unsigned int, or some other implementation-defined type. (ISO/IEC 9899:1999 6.7.2.1) \ncheck bitfield\\-typing failed: Bitfields shall be of signed or unsigned integer type. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.3\\.3**: A bit\\-field shall have a type \\_Bool, signed int, unsigned int, or some other implementation\\-defined type\\. \\(ISO/IEC 9899:1999 6\\.7\\.2\\.1\\) \ncheck **bitfield-typing** failed: Bitfields shall be of signed or unsigned integer type\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.4.1",
+                            "name": "The result of the evaluation of an expression shall not depend on the order of evaluation of subexpressions. (ISO/IEC 9899:1999 6.5)",
+                            "fullDescription": {
+                                "text": "The result of the evaluation of an expression shall not depend on the order of evaluation of subexpressions. (ISO/IEC 9899:1999 6.5)"
+                            },
+                            "messageStrings": {
+                                "evaluation-order": {
+                                    "text": "Rule A.4.1: The result of the evaluation of an expression shall not depend on the order of evaluation of subexpressions. (ISO/IEC 9899:1999 6.5) \ncheck evaluation\\-order failed: The value of an expression and its persistent side effects shall be the same under all evaluation orders. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.4\\.1**: The result of the evaluation of an expression shall not depend on the order of evaluation of subexpressions\\. \\(ISO/IEC 9899:1999 6\\.5\\) \ncheck **evaluation-order** failed: The value of an expression and its persistent side effects shall be the same under all evaluation orders\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.4.2",
+                            "name": "The result of the evaluation of an initializer list expression shall not depend on the order of evaluation of elements and subexpressions. (ISO/IEC 9899:1999 6.7.8)",
+                            "fullDescription": {
+                                "text": "The result of the evaluation of an initializer list expression shall not depend on the order of evaluation of elements and subexpressions. (ISO/IEC 9899:1999 6.7.8)"
+                            },
+                            "messageStrings": {
+                                "evaluation-order-initializer": {
+                                    "text": "Rule A.4.2: The result of the evaluation of an initializer list expression shall not depend on the order of evaluation of elements and subexpressions. (ISO/IEC 9899:1999 6.7.8) \ncheck evaluation\\-order\\-initializer failed: The values of initializer lists shall not depend on the order of evaluation of its elements and their subexpressions. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.4\\.2**: The result of the evaluation of an initializer list expression shall not depend on the order of evaluation of elements and subexpressions\\. \\(ISO/IEC 9899:1999 6\\.7\\.8\\) \ncheck **evaluation-order-initializer** failed: The values of initializer lists shall not depend on the order of evaluation of its elements and their subexpressions\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.5.1",
+                            "name": "Directives are required to follow the syntax and constraints specified in the manual.",
+                            "fullDescription": {
+                                "text": "Directives are required to follow the syntax and constraints specified in the manual."
+                            },
+                            "messageStrings": {
+                                "excessive-interval": {
+                                    "text": "Rule A.5.1: Directives are required to follow the syntax and constraints specified in the manual. \ncheck excessive\\-interval failed: Intervals specified in directives shall not exceed the range of values of the affected type. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.1**: Directives are required to follow the syntax and constraints specified in the manual\\. \ncheck **excessive-interval** failed: Intervals specified in directives shall not exceed the range of values of the affected type\\. \n{0} \n{1}"
+                                },
+                                "invalid-directive": {
+                                    "text": "Rule A.5.1: Directives are required to follow the syntax and constraints specified in the manual. \ncheck invalid\\-directive failed: Directives that do not comply with the constraints are dropped by the frontend. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.1**: Directives are required to follow the syntax and constraints specified in the manual\\. \ncheck **invalid-directive** failed: Directives that do not comply with the constraints are dropped by the frontend\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.5.2",
+                            "name": "Language features not supported by Astree that are discarded by the frontend should be avoided.",
+                            "fullDescription": {
+                                "text": "Language features not supported by Astree that are discarded by the frontend should be avoided."
+                            },
+                            "properties": {
+                                "option": "asm\\|endasm\\|once\\|pack\\|push_macro\\|pop_macro"
+                            },
+                            "messageStrings": {
+                                "pragma-usage": {
+                                    "text": "Rule A.5.2: Language features not supported by Astree that are discarded by the frontend should be avoided. \ncheck pragma\\-usage failed: #pragma directives shall only be used in the specified manner. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.2**: Language features not supported by Astree that are discarded by the frontend should be avoided\\. \ncheck **pragma-usage** failed: #pragma directives shall only be used in the specified manner\\. \n{0} \n{1}"
+                                },
+                                "unsupported-language-feature": {
+                                    "text": "Rule A.5.2: Language features not supported by Astree that are discarded by the frontend should be avoided. \ncheck unsupported\\-language\\-feature failed: Unsupported language features shall not be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.2**: Language features not supported by Astree that are discarded by the frontend should be avoided\\. \ncheck **unsupported-language-feature** failed: Unsupported language features shall not be used\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.5.3",
+                            "name": "Language features not supported by Astree should be avoided.",
+                            "fullDescription": {
+                                "text": "Language features not supported by Astree should be avoided."
+                            },
+                            "messageStrings": {
+                                "unsupported-language-feature-fatal": {
+                                    "text": "Rule A.5.3: Language features not supported by Astree should be avoided. \ncheck unsupported\\-language\\-feature\\-fatal failed: Language features that are not supported by the analyzer shall not be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.3**: Language features not supported by Astree should be avoided\\. \ncheck **unsupported-language-feature-fatal** failed: Language features that are not supported by the analyzer shall not be used\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.5.4",
+                            "name": "Analyzer configuration.",
+                            "fullDescription": {
+                                "text": "Analyzer configuration."
+                            },
+                            "messageStrings": {
+                                "annotation-insertion-failed": {
+                                    "text": "Rule A.5.4: Analyzer configuration. \ncheck annotation\\-insertion\\-failed failed: AAL annotations shall address valid source locations. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.4**: Analyzer configuration\\. \ncheck **annotation-insertion-failed** failed: AAL annotations shall address valid source locations\\. \n{0} \n{1}"
+                                },
+                                "missing-rulechecking-phases": {
+                                    "text": "Rule A.5.4: Analyzer configuration. \ncheck missing\\-rulechecking\\-phases failed: Rule checks which depend on an analysis phase which is not active cannot be executed. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.4**: Analyzer configuration\\. \ncheck **missing-rulechecking-phases** failed: Rule checks which depend on an analysis phase which is not active cannot be executed\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.5.5",
+                            "name": "Illegal header inclusion order in Autosar project.",
+                            "fullDescription": {
+                                "text": "Illegal header inclusion order in Autosar project."
+                            },
+                            "messageStrings": {
+                                "autosar-inclusion-order": {
+                                    "text": "Rule A.5.5: Illegal header inclusion order in Autosar project. \ncheck autosar\\-inclusion\\-order failed: Autosar projects shall include headers from the stub library first. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.5**: Illegal header inclusion order in Autosar project\\. \ncheck **autosar-inclusion-order** failed: Autosar projects shall include headers from the stub library first\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.5.6",
+                            "name": "Mixed const and non-const qualification on shared bytes in struct/union will be ignored by Astrée.",
+                            "fullDescription": {
+                                "text": "Mixed const and non-const qualification on shared bytes in struct/union will be ignored by Astrée."
+                            },
+                            "messageStrings": {
+                                "mixed-const-qualification": {
+                                    "text": "Rule A.5.6: Mixed const and non-const qualification on shared bytes in struct/union will be ignored by Astrée. \ncheck mixed\\-const\\-qualification failed: One or more bytes in the object are declared both const and non-const. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.6**: Mixed const and non\\-const qualification on shared bytes in struct/union will be ignored by Astrée\\. \ncheck **mixed-const-qualification** failed: One or more bytes in the object are declared both const and non\\-const\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.5.7",
+                            "name": "Unknown component specification.",
+                            "fullDescription": {
+                                "text": "Unknown component specification."
+                            },
+                            "messageStrings": {
+                                "unknown-component": {
+                                    "text": "Rule A.5.7: Unknown component specification. \ncheck unknown\\-component failed: Components not declared by __ASTREE_attributes directives shall not be used. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.7**: Unknown component specification\\. \ncheck **unknown-component** failed: Components not declared by \\_\\_ASTREE\\_attributes directives shall not be used\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.5.8",
+                            "name": "Runtime error analysis configuration.",
+                            "fullDescription": {
+                                "text": "Runtime error analysis configuration."
+                            },
+                            "messageStrings": {
+                                "config-function-unknown": {
+                                    "text": "Rule A.5.8: Runtime error analysis configuration. \ncheck config\\-function\\-unknown failed: The separate function specificaion shall only refer to functions present in the project. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.8**: Runtime error analysis configuration\\. \ncheck **config-function-unknown** failed: The separate function specificaion shall only refer to functions present in the project\\. \n{0} \n{1}"
+                                },
+                                "conflicting-absolute-addresses": {
+                                    "text": "Rule A.5.8: Runtime error analysis configuration. \ncheck conflicting\\-absolute\\-addresses failed: Memory areas declared with absolute addresses shall not partially overlap. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.5\\.8**: Runtime error analysis configuration\\. \ncheck **conflicting-absolute-addresses** failed: Memory areas declared with absolute addresses shall not partially overlap\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.6.2",
+                            "name": "Clang warnings.",
+                            "fullDescription": {
+                                "text": "Clang warnings."
+                            },
+                            "messageStrings": {
+                                "clang-warning": {
+                                    "text": "Rule A.6.2: Clang warnings. \ncheck clang\\-warning failed: Warning issued by the clang frontend. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.6\\.2**: Clang warnings\\. \ncheck **clang-warning** failed: Warning issued by the clang frontend\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "A.7.1",
+                            "name": "Within a translation unit, the same identifier shall not appear with both internal and external linkage. (ISO/IEC 9899:2011 6.2.2p7)",
+                            "fullDescription": {
+                                "text": "Within a translation unit, the same identifier shall not appear with both internal and external linkage. (ISO/IEC 9899:2011 6.2.2p7)"
+                            },
+                            "messageStrings": {
+                                "internal-and-external-linkage": {
+                                    "text": "Rule A.7.1: Within a translation unit, the same identifier shall not appear with both internal and external linkage. (ISO/IEC 9899:2011 6.2.2p7) \ncheck internal\\-and\\-external\\-linkage failed: Within a translation unit, the same identifier shall not appear with both internal and external linkage. \n{2} \n{3}",
+                                    "markdown": "Rule **A\\.7\\.1**: Within a translation unit, the same identifier shall not appear with both internal and external linkage\\. \\(ISO/IEC 9899:2011 6\\.2\\.2p7\\) \ncheck **internal-and-external-linkage** failed: Within a translation unit, the same identifier shall not appear with both internal and external linkage\\. \n{0} \n{1}"
+                                }
+                            }
+                        },
+                        {
+                            "id": "other",
+                            "name": "Other",
+                            "fullDescription": {
+                                "text": "Other"
+                            }
+                        },
+                        {
+                            "id": "analysis_stopped",
+                            "name": "Analysis stopped in critical context",
+                            "fullDescription": {
+                                "text": "Analysis stopped in critical context"
+                            }
+                        },
+                        {
+                            "id": "analysis_stopped_unexpectedly",
+                            "name": "Analysis stopped unexpectedly",
+                            "fullDescription": {
+                                "text": "Analysis stopped unexpectedly"
+                            }
+                        },
                         {
                             "id": "control_flow_anomaly",
                             "name": "Control flow anomaly",
                             "fullDescription": {
                                 "text": "Control flow anomaly"
+                            }
+                        },
+                        {
+                            "id": "invalid_pointer_comparison",
+                            "name": "Invalid pointer comparison",
+                            "fullDescription": {
+                                "text": "Invalid pointer comparison"
+                            }
+                        },
+                        {
+                            "id": "invalid_pointer_subtraction",
+                            "name": "Subtraction of invalid pointers",
+                            "fullDescription": {
+                                "text": "Subtraction of invalid pointers"
+                            }
+                        },
+                        {
+                            "id": "invalid_pointer_arithmetics",
+                            "name": "Arithmetics on invalid pointers",
+                            "fullDescription": {
+                                "text": "Arithmetics on invalid pointers"
+                            }
+                        },
+                        {
+                            "id": "invalid_float_argument",
+                            "name": "Float argument can be NaN or infinity",
+                            "fullDescription": {
+                                "text": "Float argument can be NaN or infinity"
                             }
                         },
                         {
@@ -31,10 +976,367 @@
                             }
                         },
                         {
-                            "id": "analysis_stopped",
-                            "name": "Analysis stopped in critical context",
+                            "id": "int_modulo_by_zero",
+                            "name": "Integer modulo by zero",
                             "fullDescription": {
-                                "text": "Analysis stopped in critical context"
+                                "text": "Integer modulo by zero"
+                            }
+                        },
+                        {
+                            "id": "int_undefined_modulo",
+                            "name": "Undefined integer modulo",
+                            "fullDescription": {
+                                "text": "Undefined integer modulo"
+                            }
+                        },
+                        {
+                            "id": "float_division_by_zero",
+                            "name": "Float division by zero",
+                            "fullDescription": {
+                                "text": "Float division by zero"
+                            }
+                        },
+                        {
+                            "id": "invalid_pointer_dereference",
+                            "name": "Dereference of null or invalid pointer",
+                            "fullDescription": {
+                                "text": "Dereference of null or invalid pointer"
+                            }
+                        },
+                        {
+                            "id": "overflow_upon_dereference",
+                            "name": "Possible overflow upon dereference",
+                            "fullDescription": {
+                                "text": "Possible overflow upon dereference"
+                            }
+                        },
+                        {
+                            "id": "field_overflow_upon_dereference",
+                            "name": "Incorrect field dereference",
+                            "fullDescription": {
+                                "text": "Incorrect field dereference"
+                            }
+                        },
+                        {
+                            "id": "misaligned_dereference",
+                            "name": "Dereference of mis-aligned pointer",
+                            "fullDescription": {
+                                "text": "Dereference of mis-aligned pointer"
+                            }
+                        },
+                        {
+                            "id": "invalid_memory_operation",
+                            "name": "Invalid memcpy/bzero/access/trash",
+                            "fullDescription": {
+                                "text": "Invalid memcpy/bzero/access/trash"
+                            }
+                        },
+                        {
+                            "id": "invalid_function_pointer",
+                            "name": "Pointer to invalid or null function",
+                            "fullDescription": {
+                                "text": "Pointer to invalid or null function"
+                            }
+                        },
+                        {
+                            "id": "ignored_recursive_call",
+                            "name": "Ignored recursive call",
+                            "fullDescription": {
+                                "text": "Ignored recursive call"
+                            }
+                        },
+                        {
+                            "id": "assert_failure",
+                            "name": "Assertion failure",
+                            "fullDescription": {
+                                "text": "Assertion failure"
+                            }
+                        },
+                        {
+                            "id": "check_failure",
+                            "name": "Check failure",
+                            "fullDescription": {
+                                "text": "Check failure"
+                            }
+                        },
+                        {
+                            "id": "wrong_argument_count",
+                            "name": "Function call with wrong number of arguments",
+                            "fullDescription": {
+                                "text": "Function call with wrong number of arguments"
+                            }
+                        },
+                        {
+                            "id": "incompatible_parameter_type",
+                            "name": "Incompatible parameter type in a function call",
+                            "fullDescription": {
+                                "text": "Incompatible parameter type in a function call"
+                            }
+                        },
+                        {
+                            "id": "incompatible_return_type",
+                            "name": "Incompatible function return type",
+                            "fullDescription": {
+                                "text": "Incompatible function return type"
+                            }
+                        },
+                        {
+                            "id": "offset_overflow",
+                            "name": "Offset range overflow",
+                            "fullDescription": {
+                                "text": "Offset range overflow"
+                            }
+                        },
+                        {
+                            "id": "array_out_of_bounds",
+                            "name": "Out-of-bound array access",
+                            "fullDescription": {
+                                "text": "Out-of-bound array access"
+                            }
+                        },
+                        {
+                            "id": "square_root_argument",
+                            "name": "Square root of negative number",
+                            "fullDescription": {
+                                "text": "Square root of negative number"
+                            }
+                        },
+                        {
+                            "id": "shift_argument",
+                            "name": "Wrong range of second shift argument",
+                            "fullDescription": {
+                                "text": "Wrong range of second shift argument"
+                            }
+                        },
+                        {
+                            "id": "shift_first_argument",
+                            "name": "Wrong range of first shift argument",
+                            "fullDescription": {
+                                "text": "Wrong range of first shift argument"
+                            }
+                        },
+                        {
+                            "id": "arithmetic_overflow",
+                            "name": "Overflow in arithmetic",
+                            "fullDescription": {
+                                "text": "Overflow in arithmetic"
+                            }
+                        },
+                        {
+                            "id": "conversion_overflow",
+                            "name": "Overflow in conversion",
+                            "fullDescription": {
+                                "text": "Overflow in conversion"
+                            }
+                        },
+                        {
+                            "id": "conversion_overflow_unpredictable",
+                            "name": "Overflow in conversion (with unpredictable result)",
+                            "fullDescription": {
+                                "text": "Overflow in conversion (with unpredictable result)"
+                            }
+                        },
+                        {
+                            "id": "constant_out_of_range",
+                            "name": "Constant out of range",
+                            "fullDescription": {
+                                "text": "Constant out of range"
+                            }
+                        },
+                        {
+                            "id": "stub_invocation",
+                            "name": "Stub invocation",
+                            "fullDescription": {
+                                "text": "Stub invocation"
+                            }
+                        },
+                        {
+                            "id": "uninitialized_variable_use",
+                            "name": "Use of uninitialized variables",
+                            "fullDescription": {
+                                "text": "Use of uninitialized variables"
+                            }
+                        },
+                        {
+                            "id": "dangling_pointer_use",
+                            "name": "Use of dangling pointer",
+                            "fullDescription": {
+                                "text": "Use of dangling pointer"
+                            }
+                        },
+                        {
+                            "id": "read_of_not_written_variable",
+                            "name": "Reading global/static variable without explicit initializer or prior assignment",
+                            "fullDescription": {
+                                "text": "Reading global/static variable without explicit initializer or prior assignment"
+                            }
+                        },
+                        {
+                            "id": "write_after_write",
+                            "name": "Write after write",
+                            "fullDescription": {
+                                "text": "Write after write"
+                            }
+                        },
+                        {
+                            "id": "infinite_loop",
+                            "name": "Infinite loop",
+                            "fullDescription": {
+                                "text": "Infinite loop"
+                            }
+                        },
+                        {
+                            "id": "write_to_constant_memory",
+                            "name": "Attempt to write to a constant",
+                            "fullDescription": {
+                                "text": "Attempt to write to a constant"
+                            }
+                        },
+                        {
+                            "id": "taint_sink",
+                            "name": "Taint sink",
+                            "fullDescription": {
+                                "text": "Taint sink"
+                            }
+                        },
+                        {
+                            "id": "invalid_dynamic_memory_allocation",
+                            "name": "Invalid argument in dynamic memory allocation, free or resize",
+                            "fullDescription": {
+                                "text": "Invalid argument in dynamic memory allocation, free or resize"
+                            }
+                        },
+                        {
+                            "id": "invalid_usage_of_concurrency_intrinsic",
+                            "name": "Invalid usage of concurrency intrinsic",
+                            "fullDescription": {
+                                "text": "Invalid usage of concurrency intrinsic"
+                            }
+                        },
+                        {
+                            "id": "invalid_usage_of_os_service",
+                            "name": "Invalid usage of OS service",
+                            "fullDescription": {
+                                "text": "Invalid usage of OS service"
+                            }
+                        },
+                        {
+                            "id": "read_write_data_race",
+                            "name": "Read/write data race",
+                            "fullDescription": {
+                                "text": "Read/write data race"
+                            }
+                        },
+                        {
+                            "id": "write_write_data_race",
+                            "name": "Write/write data race",
+                            "fullDescription": {
+                                "text": "Write/write data race"
+                            }
+                        },
+                        {
+                            "id": "deadlock",
+                            "name": "Deadlock",
+                            "fullDescription": {
+                                "text": "Deadlock"
+                            }
+                        },
+                        {
+                            "id": "invalid_interval",
+                            "name": "Invalid interval",
+                            "fullDescription": {
+                                "text": "Invalid interval"
+                            }
+                        },
+                        {
+                            "id": "user_defined",
+                            "name": "User defined alarm",
+                            "fullDescription": {
+                                "text": "User defined alarm"
+                            }
+                        },
+                        {
+                            "id": "reinterpret_incompatible_parameter_type",
+                            "name": "Reinterpreting incompatible parameter type in a function call",
+                            "fullDescription": {
+                                "text": "Reinterpreting incompatible parameter type in a function call"
+                            }
+                        },
+                        {
+                            "id": "reinterpret_incompatible_return_type",
+                            "name": "Reinterpreting incompatible function return type",
+                            "fullDescription": {
+                                "text": "Reinterpreting incompatible function return type"
+                            }
+                        },
+                        {
+                            "id": "spectre_vulnerability",
+                            "name": "Spectre vulnerability",
+                            "fullDescription": {
+                                "text": "Spectre vulnerability"
+                            }
+                        },
+                        {
+                            "id": "unbounded_loop",
+                            "name": "Unbounded loop",
+                            "fullDescription": {
+                                "text": "Unbounded loop"
+                            }
+                        },
+                        {
+                            "id": "global_assert_failure",
+                            "name": "Global assertion failure",
+                            "fullDescription": {
+                                "text": "Global assertion failure"
+                            }
+                        },
+                        {
+                            "id": "memory_leak",
+                            "name": "Memory leak",
+                            "fullDescription": {
+                                "text": "Memory leak"
+                            }
+                        },
+                        {
+                            "id": "analysis_ignored_directive",
+                            "name": "Analysis ignored directive",
+                            "fullDescription": {
+                                "text": "Analysis ignored directive"
+                            }
+                        },
+                        {
+                            "id": "frontend_clang",
+                            "name": "Frontend clang",
+                            "fullDescription": {
+                                "text": "Frontend clang"
+                            }
+                        },
+                        {
+                            "id": "frontend_c",
+                            "name": "Frontend c",
+                            "fullDescription": {
+                                "text": "Frontend c"
+                            }
+                        },
+                        {
+                            "id": "frontend_source",
+                            "name": "Frontend source",
+                            "fullDescription": {
+                                "text": "Frontend source"
+                            }
+                        },
+                        {
+                            "id": "float_to_unsigned_conversion_trap",
+                            "name": "Float to unsigned conversion trap",
+                            "fullDescription": {
+                                "text": "Float to unsigned conversion trap"
+                            }
+                        },
+                        {
+                            "id": "arithmetic_overflow_unpredictable",
+                            "name": "Overflow in arithmetic (with unpredictable result)",
+                            "fullDescription": {
+                                "text": "Overflow in arithmetic (with unpredictable result)"
                             }
                         }
                     ]
@@ -52,7 +1354,85 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 0
+                                                "index": 13
+                                            },
+                                            "region": {
+                                                "startLine": 2,
+                                                "endLine": 2,
+                                                "snippet": {
+                                                    "text": "numberFinal = number1 / number0;\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+                                                }
+                                            }
+                                        },
+                                        "message": {
+                                            "text": "call#main"
+                                        }
+                                    }
+                                },
+                                {
+                                    "location": {
+                                        "physicalLocation": {
+                                            "artifactLocation": {
+                                                "index": 13
+                                            },
+                                            "region": {
+                                                "startLine": 7,
+                                                "endLine": 7
+                                            }
+                                        },
+                                        "message": {
+                                            "text": "ERROR analysis_stopped: Definite runtime error during assignment in this context. Analysis stopped for this context"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "findingKind": "error",
+                        "checkKey": "analysis_stopped",
+                        "hint": "ERROR analysis_stopped: Definite runtime error during assignment in this context. Analysis stopped for this context at SARIF_FOR_GITHUB.c:7"
+                    },
+                    "message": {
+                        "arguments": [
+                            "ERROR analysis\\_stopped: Definite runtime error during assignment in this context\\. Analysis stopped for this context at SARIF\\_FOR\\_GITHUB\\.c:7",
+                            "",
+                            "ERROR analysis_stopped: Definite runtime error during assignment in this context. Analysis stopped for this context at SARIF_FOR_GITHUB.c:7",
+                            ""
+                        ],
+                        "text": "Analysis stopped in critical context \n{2} \n{3}",
+                        "markdown": "**Analysis stopped in critical context** \n{0} \n{1}"
+                    },
+                    "ruleId": "analysis_stopped",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 13
+                                },
+                                "region": {
+                                    "startLine": 7,
+                                    "endLine": 7,
+                                    "snippet": {
+                                        "text": "numberFinal = number1 / number0;\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "stacks": [
+                        {
+                            "message": {
+                                "text": "Context 0"
+                            },
+                            "frames": [
+                                {
+                                    "location": {
+                                        "physicalLocation": {
+                                            "artifactLocation": {
+                                                "index": 13
                                             },
                                             "region": {
                                                 "startLine": 2,
@@ -63,7 +1443,7 @@
                                             }
                                         },
                                         "message": {
-                                            "text": "ALARM (D) control_flow_anomalyBLABLUB: analyzed entry-point main never returns"
+                                            "text": "ALARM (D) control_flow_anomaly: analyzed entry-point main never returns"
                                         }
                                     }
                                 }
@@ -71,21 +1451,27 @@
                         }
                     ],
                     "properties": {
-                        "Finding-kind": "Alarm",
-                        "Class": "D - flow anomaly",
-                        "Check-key": "control_flow_anomaly",
-                        "Hint": "ALARM (D) control_flow_anomaly: analyzed entry-point main never returns at SARIF_FOR_GITHUB.c:2"
+                        "findingKind": "alarm",
+                        "class": "D - flow anomaly",
+                        "checkKey": "control_flow_anomaly",
+                        "hint": "ALARM (D) control_flow_anomaly: analyzed entry-point main never returns at SARIF_FOR_GITHUB.c:2"
                     },
                     "message": {
-                        "text": "Control flow anomaly  \nALARM (D) control_flow_anomaly: analyzed entry-point main never returns at SARIF_FOR_GITHUB.c:2  \n",
-                        "markdown": "**Control flow anomaly**  \nALARM \\(D\\) control\\_flow\\_anomaly: analyzed entry\\-point main never returns at SARIF\\_FOR\\_GITHUB\\.c:2  \n"
+                        "arguments": [
+                            "ALARM \\(D\\) control\\_flow\\_anomaly: analyzed entry\\-point main never returns at SARIF\\_FOR\\_GITHUB\\.c:2",
+                            "",
+                            "ALARM (D) control_flow_anomaly: analyzed entry-point main never returns at SARIF_FOR_GITHUB.c:2",
+                            ""
+                        ],
+                        "text": "Control flow anomaly \n{2} \n{3}",
+                        "markdown": "**Control flow anomaly** \n{0} \n{1}"
                     },
                     "ruleId": "control_flow_anomaly",
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "index": 0
+                                    "index": 13
                                 },
                                 "region": {
                                     "startLine": 2,
@@ -109,7 +1495,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 0
+                                                "index": 13
                                             },
                                             "region": {
                                                 "startLine": 2,
@@ -128,7 +1514,7 @@
                                     "location": {
                                         "physicalLocation": {
                                             "artifactLocation": {
-                                                "index": 0
+                                                "index": 13
                                             },
                                             "region": {
                                                 "startLine": 7,
@@ -144,99 +1530,33 @@
                         }
                     ],
                     "properties": {
-                        "Finding-kind": "Alarm",
-                        "Class": "A - run-time error",
-                        "Check-key": "int_division_by_zero",
-                        "Hint": "ALARM (A) int_division_by_zero: divisor in {0} at SARIF_FOR_GITHUB.c:7"
+                        "findingKind": "alarm",
+                        "class": "C - run-time error",
+                        "checkKey": "int_division_by_zero",
+                        "hint": "ALARM (A) int_division_by_zero: divisor in {0} at SARIF_FOR_GITHUB.c:7"
                     },
                     "message": {
-                        "text": "Integer division by zero  \nALARM (A) int_division_by_zero: divisor in {0} at SARIF_FOR_GITHUB.c:7  \n",
-                        "markdown": "**Integer division by zero**  \nALARM \\(A\\) int\\_division\\_by\\_zero: divisor in \\{0\\} at SARIF\\_FOR\\_GITHUB\\.c:7  \n"
+                        "arguments": [
+                            "ALARM \\(A\\) int\\_division\\_by\\_zero: divisor in \\{0\\} at SARIF\\_FOR\\_GITHUB\\.c:7",
+                            "",
+                            "ALARM (A) int_division_by_zero: divisor in {0} at SARIF_FOR_GITHUB.c:7",
+                            ""
+                        ],
+                        "text": "Integer division by zero \n{2} \n{3}",
+                        "markdown": "**Integer division by zero** \n{0} \n{1}"
                     },
                     "ruleId": "int_division_by_zero",
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "index": 0
+                                    "index": 13
                                 },
                                 "region": {
                                     "startLine": 7,
                                     "endLine": 7,
                                     "snippet": {
                                         "text": "numberFinal = number1 / number0;\n              ~~~~~~~~~~~~~~~~~"
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "stacks": [
-                        {
-                            "message": {
-                                "text": "Context 0"
-                            },
-                            "frames": [
-                                {
-                                    "location": {
-                                        "physicalLocation": {
-                                            "artifactLocation": {
-                                                "index": 0
-                                            },
-                                            "region": {
-                                                "startLine": 2,
-                                                "endLine": 2,
-                                                "snippet": {
-                                                    "text": "numberFinal = number1 / number0;\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                                                }
-                                            }
-                                        },
-                                        "message": {
-                                            "text": "call#main"
-                                        }
-                                    }
-                                },
-                                {
-                                    "location": {
-                                        "physicalLocation": {
-                                            "artifactLocation": {
-                                                "index": 0
-                                            },
-                                            "region": {
-                                                "startLine": 7,
-                                                "endLine": 7
-                                            }
-                                        },
-                                        "message": {
-                                            "text": "ERROR analysis_stopped: Definite runtime error during assignment in this context. Analysis stopped for this context"
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    ],
-                    "properties": {
-                        "Finding-kind": "Error",
-                        "Check-key": "analysis_stopped",
-                        "Hint": "ERROR analysis_stopped: Definite runtime error during assignment in this context. Analysis stopped for this context at SARIF_FOR_GITHUB.c:7"
-                    },
-                    "message": {
-                        "text": "Analysis stopped in critical context  \nERROR analysis_stopped: Definite runtime error during assignment in this context. Analysis stopped for this context at SARIF_FOR_GITHUB.c:7  \n",
-                        "markdown": "**Analysis stopped in critical context**  \nERROR analysis\\_stopped: Definite runtime error during assignment in this context\\. Analysis stopped for this context at SARIF\\_FOR\\_GITHUB\\.c:7  \n"
-                    },
-                    "ruleId": "analysis_stopped",
-                    "locations": [
-                        {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "index": 0
-                                },
-                                "region": {
-                                    "startLine": 7,
-                                    "endLine": 7,
-                                    "snippet": {
-                                        "text": "numberFinal = number1 / number0;\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
                                     }
                                 }
                             }
