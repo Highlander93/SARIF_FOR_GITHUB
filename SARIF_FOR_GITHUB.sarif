@@ -6,7 +6,7 @@
             "artifacts": [
                 {
                     "location": {
-                        "uri": "./SARIF_FOR_GITHUB/SARIF_FOR_GITHUB.c"
+                        "uri": "SARIF_FOR_GITHUB.c"
                     }
                 }
             ],
