@@ -13,7 +13,7 @@
             "tool": {
                 "driver": {
                     "name": "astree",
-                    "version": "Version: 24.04i Build: 15807885 Tag: bug/36271.3",
+                    "version": "Version: 24.04i Build: 15968277 Tag: bug/36271.hahn",
                     "product": "AbsInt Advanced Analyzer for C/C++",
                     "informationUri": "https://www.absint.com/",
                     "rules": [
@@ -57,10 +57,77 @@
                                             },
                                             "region": {
                                                 "startLine": 2,
-                                                "endLine": 2,
-                                                "snippet": {
-                                                    "text": "numberFinal = number1 / number0;\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                                                }
+                                                "endLine": 2
+                                            }
+                                        },
+                                        "message": {
+                                            "text": "call#main"
+                                        }
+                                    }
+                                },
+                                {
+                                    "location": {
+                                        "physicalLocation": {
+                                            "artifactLocation": {
+                                                "index": 0
+                                            },
+                                            "region": {
+                                                "startLine": 7,
+                                                "endLine": 7
+                                            }
+                                        },
+                                        "message": {
+                                            "text": "ALARM (A) int_division_by_zero: divisor in {0}"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "findingKind": "alarm",
+                        "class": "A - run-time error",
+                        "checkKey": "int_division_by_zero",
+                        "hint": "ALARM (A) int_division_by_zero: divisor in {0} at SARIF_FOR_GITHUB.c:7"
+                    },
+                    "message": {
+                        "text": "Integer division by zero  \nALARM (A) int_division_by_zero: divisor in {0} at SARIF_FOR_GITHUB.c:7  \n",
+                        "markdown": "**Integer division by zero**  \nALARM \\(A\\) int\\_division\\_by\\_zero: divisor in \\{0\\} at SARIF\\_FOR\\_GITHUB\\.c:7  \n"
+                    },
+                    "ruleId": "int_division_by_zero",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0
+                                },
+                                "region": {
+                                    "startLine": 7,
+                                    "endLine": 7,
+                                    "snippet": {
+                                        "text": "numberFinal = number1 / number0;\n              ~~~~~~~~~~~~~~~~~"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "stacks": [
+                        {
+                            "message": {
+                                "text": "Context 0"
+                            },
+                            "frames": [
+                                {
+                                    "location": {
+                                        "physicalLocation": {
+                                            "artifactLocation": {
+                                                "index": 0
+                                            },
+                                            "region": {
+                                                "startLine": 2,
+                                                "endLine": 2
                                             }
                                         },
                                         "message": {
@@ -93,14 +160,8 @@
                         "hint": "ERROR analysis_stopped: Definite runtime error during assignment in this context. Analysis stopped for this context at SARIF_FOR_GITHUB.c:7"
                     },
                     "message": {
-                        "arguments": [
-                            "ERROR analysis\\_stopped: Definite runtime error during assignment in this context\\. Analysis stopped for this context at SARIF\\_FOR\\_GITHUB\\.c:7",
-                            "",
-                            "ERROR analysis_stopped: Definite runtime error during assignment in this context. Analysis stopped for this context at SARIF_FOR_GITHUB.c:7",
-                            ""
-                        ],
-                        "text": "Analysis stopped in critical context \n{2} \n{3}",
-                        "markdown": "**Analysis stopped in critical context** \n{0} \n{1}"
+                        "text": "Analysis stopped in critical context  \nERROR analysis_stopped: Definite runtime error during assignment in this context. Analysis stopped for this context at SARIF_FOR_GITHUB.c:7  \n",
+                        "markdown": "**Analysis stopped in critical context**  \nERROR analysis\\_stopped: Definite runtime error during assignment in this context\\. Analysis stopped for this context at SARIF\\_FOR\\_GITHUB\\.c:7  \n"
                     },
                     "ruleId": "analysis_stopped",
                     "locations": [
@@ -135,10 +196,7 @@
                                             },
                                             "region": {
                                                 "startLine": 2,
-                                                "endLine": 2,
-                                                "snippet": {
-                                                    "text": "int main() {\n    ~~~~"
-                                                }
+                                                "endLine": 2
                                             }
                                         },
                                         "message": {
@@ -156,14 +214,8 @@
                         "hint": "ALARM (D) control_flow_anomaly: analyzed entry-point main never returns at SARIF_FOR_GITHUB.c:2"
                     },
                     "message": {
-                        "arguments": [
-                            "ALARM \\(D\\) control\\_flow\\_anomaly: analyzed entry\\-point main never returns at SARIF\\_FOR\\_GITHUB\\.c:2",
-                            "",
-                            "ALARM (D) control_flow_anomaly: analyzed entry-point main never returns at SARIF_FOR_GITHUB.c:2",
-                            ""
-                        ],
-                        "text": "Control flow anomaly \n{2} \n{3}",
-                        "markdown": "**Control flow anomaly** \n{0} \n{1}"
+                        "text": "Control flow anomaly  \nALARM (D) control_flow_anomaly: analyzed entry-point main never returns at SARIF_FOR_GITHUB.c:2  \n",
+                        "markdown": "**Control flow anomaly**  \nALARM \\(D\\) control\\_flow\\_anomaly: analyzed entry\\-point main never returns at SARIF\\_FOR\\_GITHUB\\.c:2  \n"
                     },
                     "ruleId": "control_flow_anomaly",
                     "locations": [
@@ -177,85 +229,6 @@
                                     "endLine": 2,
                                     "snippet": {
                                         "text": "int main() {\n    ~~~~"
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "stacks": [
-                        {
-                            "message": {
-                                "text": "Context 0"
-                            },
-                            "frames": [
-                                {
-                                    "location": {
-                                        "physicalLocation": {
-                                            "artifactLocation": {
-                                                "index": 0
-                                            },
-                                            "region": {
-                                                "startLine": 2,
-                                                "endLine": 2,
-                                                "snippet": {
-                                                    "text": "numberFinal = number1 / number0;\n              ~~~~~~~~~~~~~~~~~"
-                                                }
-                                            }
-                                        },
-                                        "message": {
-                                            "text": "call#main"
-                                        }
-                                    }
-                                },
-                                {
-                                    "location": {
-                                        "physicalLocation": {
-                                            "artifactLocation": {
-                                                "index": 0
-                                            },
-                                            "region": {
-                                                "startLine": 7,
-                                                "endLine": 7
-                                            }
-                                        },
-                                        "message": {
-                                            "text": "ALARM (A) int_division_by_zero: divisor in {0}"
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    ],
-                    "properties": {
-                        "findingKind": "alarm",
-                        "class": "C - run-time error",
-                        "checkKey": "int_division_by_zero",
-                        "hint": "ALARM (A) int_division_by_zero: divisor in {0} at SARIF_FOR_GITHUB.c:7"
-                    },
-                    "message": {
-                        "arguments": [
-                            "ALARM \\(A\\) int\\_division\\_by\\_zero: divisor in \\{0\\} at SARIF\\_FOR\\_GITHUB\\.c:7",
-                            "",
-                            "ALARM (A) int_division_by_zero: divisor in {0} at SARIF_FOR_GITHUB.c:7",
-                            ""
-                        ],
-                        "text": "Integer division by zero \n{2} \n{3}",
-                        "markdown": "**Integer division by zero** \n{0} \n{1}"
-                    },
-                    "ruleId": "int_division_by_zero",
-                    "locations": [
-                        {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "index": 0
-                                },
-                                "region": {
-                                    "startLine": 7,
-                                    "endLine": 7,
-                                    "snippet": {
-                                        "text": "numberFinal = number1 / number0;\n              ~~~~~~~~~~~~~~~~~"
                                     }
                                 }
                             }
