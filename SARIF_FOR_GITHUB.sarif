@@ -3,13 +3,6 @@
     "$schema": "http://json.schemastore.org/sarif-2.1.0",
     "runs": [
         {
-            "artifacts": [
-                {
-                    "location": {
-                        "uri": "SARIF_FOR_GITHUB.c"
-                    }
-                }
-            ],
             "tool": {
                 "driver": {
                     "name": "astree",
@@ -41,8 +34,36 @@
                     ]
                 }
             },
+            "artifacts": [
+                {
+                    "location": {
+                        "uri": "SARIF_FOR_GITHUB.c"
+                    }
+                }
+            ],
             "results": [
                 {
+                    "ruleId": "int_division_by_zero",
+                    "message": {
+                        "text": "A - run-time error - Integer division by zero: divisor in {0}",
+                        "markdown": "A \\- run\\-time error - **Integer division by zero**: divisor in \\{0\\}"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0
+                                },
+                                "region": {
+                                    "startLine": 7,
+                                    "endLine": 7,
+                                    "snippet": {
+                                        "text": "numberFinal = number1 / number0;\n              ~~~~~~~~~~~~~~~~~"
+                                    }
+                                }
+                            }
+                        }
+                    ],
                     "stacks": [
                         {
                             "message": {
@@ -87,14 +108,15 @@
                     "properties": {
                         "findingKind": "alarm",
                         "class": "A - run-time error",
-                        "checkKey": "int_division_by_zero",
-                        "hint": "ALARM (A) int_division_by_zero: divisor in {0} at SARIF_FOR_GITHUB.c:7"
-                    },
+                        "checkKey": "int_division_by_zero"
+                    }
+                },
+                {
+                    "ruleId": "analysis_stopped",
                     "message": {
-                        "text": "Integer division by zero  \nALARM (A) int_division_by_zero: divisor in {0} at SARIF_FOR_GITHUB.c:7  \n",
-                        "markdown": "**Integer division by zero**  \nALARM \\(A\\) int\\_division\\_by\\_zero: divisor in \\{0\\} at SARIF\\_FOR\\_GITHUB\\.c:7  \n"
+                        "text": "Error - Analysis stopped in critical context: Definite runtime error during assignment in this context. Analysis stopped for this context",
+                        "markdown": "Error - **Analysis stopped in critical context**: Definite runtime error during assignment in this context\\. Analysis stopped for this context"
                     },
-                    "ruleId": "int_division_by_zero",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -105,14 +127,12 @@
                                     "startLine": 7,
                                     "endLine": 7,
                                     "snippet": {
-                                        "text": "numberFinal = number1 / number0;\n              ~~~~~~~~~~~~~~~~~"
+                                        "text": "numberFinal = number1 / number0;\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
                                     }
                                 }
                             }
                         }
-                    ]
-                },
-                {
+                    ],
                     "stacks": [
                         {
                             "message": {
@@ -156,14 +176,15 @@
                     ],
                     "properties": {
                         "findingKind": "error",
-                        "checkKey": "analysis_stopped",
-                        "hint": "ERROR analysis_stopped: Definite runtime error during assignment in this context. Analysis stopped for this context at SARIF_FOR_GITHUB.c:7"
-                    },
+                        "checkKey": "analysis_stopped"
+                    }
+                },
+                {
+                    "ruleId": "control_flow_anomaly",
                     "message": {
-                        "text": "Analysis stopped in critical context  \nERROR analysis_stopped: Definite runtime error during assignment in this context. Analysis stopped for this context at SARIF_FOR_GITHUB.c:7  \n",
-                        "markdown": "**Analysis stopped in critical context**  \nERROR analysis\\_stopped: Definite runtime error during assignment in this context\\. Analysis stopped for this context at SARIF\\_FOR\\_GITHUB\\.c:7  \n"
+                        "text": "D - flow anomaly - Control flow anomaly: analyzed entry-point main never returns",
+                        "markdown": "D \\- flow anomaly - **Control flow anomaly**: analyzed entry\\-point main never returns"
                     },
-                    "ruleId": "analysis_stopped",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -171,17 +192,15 @@
                                     "index": 0
                                 },
                                 "region": {
-                                    "startLine": 7,
-                                    "endLine": 7,
+                                    "startLine": 2,
+                                    "endLine": 2,
                                     "snippet": {
-                                        "text": "numberFinal = number1 / number0;\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+                                        "text": "int main() {\n    ~~~~"
                                     }
                                 }
                             }
                         }
-                    ]
-                },
-                {
+                    ],
                     "stacks": [
                         {
                             "message": {
@@ -210,30 +229,8 @@
                     "properties": {
                         "findingKind": "alarm",
                         "class": "D - flow anomaly",
-                        "checkKey": "control_flow_anomaly",
-                        "hint": "ALARM (D) control_flow_anomaly: analyzed entry-point main never returns at SARIF_FOR_GITHUB.c:2"
-                    },
-                    "message": {
-                        "text": "Control flow anomaly  \nALARM (D) control_flow_anomaly: analyzed entry-point main never returns at SARIF_FOR_GITHUB.c:2  \n",
-                        "markdown": "**Control flow anomaly**  \nALARM \\(D\\) control\\_flow\\_anomaly: analyzed entry\\-point main never returns at SARIF\\_FOR\\_GITHUB\\.c:2  \n"
-                    },
-                    "ruleId": "control_flow_anomaly",
-                    "locations": [
-                        {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "index": 0
-                                },
-                                "region": {
-                                    "startLine": 2,
-                                    "endLine": 2,
-                                    "snippet": {
-                                        "text": "int main() {\n    ~~~~"
-                                    }
-                                }
-                            }
-                        }
-                    ]
+                        "checkKey": "control_flow_anomaly"
+                    }
                 }
             ]
         }
